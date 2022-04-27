@@ -52,21 +52,36 @@ console.log(first);
 // console.log(b);
 // console.log(newName1);
 
-
-function keepWholeObject (wholeObject: { a: string, b?: number}){
-    let {a, b=2002} = wholeObject;
+/*
+function keepWholeObject(wholeObject: { a: string, b?: number }) {
+    let { a, b = 2002 } = wholeObject;
 }
 
 let a = "A";
 let b = 123;
 type C = { a: string, b?: number }
-function f({a, b} : C) : void{
-    console.log(a);``
+function f({ a, b }: C): void {
+    console.log(a); ``
 }
 
-let defaults = { food : "spicy", price: "$100", ambiance: "noisy"};
+let defaults = { food: "spicy", price: "$100", ambiance: "noisy" };
 let search = { ...defaults, food: "rich" };
 
 console.log(defaults.food);
 console.log(search[0]);
 console.log(search.food);
+
+*/
+(function () {
+    const aPicker = "aPicker";
+    console.log(aPicker);
+})()
+
+const result = (function () {
+    return "test";
+})()
+
+console.log(result);
+
+
+
